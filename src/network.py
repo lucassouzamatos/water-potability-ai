@@ -3,7 +3,7 @@ from normalizer import Normalizer
 from sklearn.neural_network import MLPClassifier
 from sklearn.ensemble import RandomForestClassifier
 
-class PerceptronMultiLayer:
+class Network:
     def __init__(self) -> None:
       self.__setup__()
 
@@ -79,5 +79,5 @@ class PerceptronMultiLayer:
           print(f"Score of testing: {test_score} \n")
 
 if __name__ == '__main__':
-  network = PerceptronMultiLayer()
+  network = Network()
   network.best_algorithm()
